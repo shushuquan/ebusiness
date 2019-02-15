@@ -1,0 +1,1396 @@
+
+
+[INFO ] 2018-08-28 22:58:27,184 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-08-28 22:58:27,209 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Tue Aug 28 22:58:27 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-28 22:58:27,231 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-28 22:58:27,595 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-28 22:58:27,727 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-28 22:58:27,744 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-28 22:58:28,032 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.content.service.ContentCategoryService=empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268476 empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268476 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=14296&side=provider&timestamp=1535468245577, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12176&side=provider&timeout=6000&timestamp=1535468192374, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268891 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268891 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=14296&side=provider&timestamp=1535468245926, shu.edu.service.ItemCatService=empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268945 empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268945 dubbo://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=15436&side=provider&timestamp=1535468162778, shu.edu.service.ItemService=empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=getItemList,addItem,getItemById&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268997 empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=getItemList,addItem,getItemById&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268997 dubbo://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById&pid=15436&side=provider&timestamp=1535468162443, shu.edu.search.service.SearchItemService=empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468269067 empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468269067 dubbo://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=12176&side=provider&timeout=6000&timestamp=1535468191995}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-28 22:58:28,043 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-28 22:58:28,061 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-28 22:58:28,061 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-08-28 22:58:28,061 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-08-28 22:58:28,061 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-28 22:58:28,062 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-08-28 22:58:28,062 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-08-28 22:58:28,062 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-08-28 22:58:28,062 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-28 22:58:28,063 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-28 22:58:28,063 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-28 22:58:28,064 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-28 22:58:28,064 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-28 22:58:28,064 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-08-28 22:58:28,064 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-08-28 22:58:28,064 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-08-28 22:58:28,065 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7d16595a
+
+
+[INFO ] 2018-08-28 22:58:28,139 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-28 22:58:28,140 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-08-28 22:58:28,156 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x100000fb561001b, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-28 22:58:28,157 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-28 22:58:28,177 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10468&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468307964, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 22:58:28,200 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10468&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468307964, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 22:58:28,229 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10468&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468307964, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12176&side=provider&timeout=6000&timestamp=1535468192374, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10468&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468307964, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10468&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468307964], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 22:58:28,362 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x58baf3b8, /192.168.56.1:60823 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 22:58:28,363 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 22:58:28,413 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10468&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535468307964, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 22:58:28,640 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-28 22:58:28,935 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Tue Aug 28 22:58:27 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-28 22:58:28,969 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Tue Aug 28 22:58:27 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-28 22:58:29,043 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 1850 ms
+
+
+[INFO ] 2018-08-28 23:01:23,790 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-08-28 23:01:23,828 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Tue Aug 28 23:01:23 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-28 23:01:23,854 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-28 23:01:24,141 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-28 23:01:24,218 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-28 23:01:24,223 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-28 23:01:24,434 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.content.service.ContentCategoryService=empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268476 empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268476 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=14296&side=provider&timestamp=1535468245577, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12176&side=provider&timeout=6000&timestamp=1535468192374, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268891 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268891 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=14296&side=provider&timestamp=1535468245926, shu.edu.service.ItemCatService=empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268945 empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268945 dubbo://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=9080&side=provider&timestamp=1535468459426, shu.edu.service.ItemService=empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=getItemList,addItem,getItemById&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268997 empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=getItemList,addItem,getItemById&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468268997 dubbo://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById&pid=9080&side=provider&timestamp=1535468459106, shu.edu.search.service.SearchItemService=empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468269067 empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=15204&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468269067 dubbo://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=12176&side=provider&timeout=6000&timestamp=1535468191995}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-28 23:01:24,447 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-28 23:01:24,459 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-28 23:01:24,459 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-08-28 23:01:24,460 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-08-28 23:01:24,460 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-28 23:01:24,460 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-08-28 23:01:24,460 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-08-28 23:01:24,461 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-08-28 23:01:24,461 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-28 23:01:24,462 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-28 23:01:24,462 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-28 23:01:24,462 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-28 23:01:24,463 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-28 23:01:24,463 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-08-28 23:01:24,463 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-08-28 23:01:24,463 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-08-28 23:01:24,464 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@64dba3b9
+
+
+[INFO ] 2018-08-28 23:01:24,594 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-28 23:01:24,595 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-08-28 23:01:24,603 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x100000fb561001d, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-28 23:01:24,604 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-28 23:01:24,621 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468484383, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 23:01:24,683 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468484383, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 23:01:24,715 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468484383, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12176&side=provider&timeout=6000&timestamp=1535468192374, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468484383, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535468484383], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 23:01:24,836 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xb87dcd97, /192.168.56.1:61117 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 23:01:24,837 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 23:01:24,878 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7252&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535468484383, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-28 23:01:25,015 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-28 23:01:25,270 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Tue Aug 28 23:01:23 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-28 23:01:25,304 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Tue Aug 28 23:01:23 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-28 23:01:25,398 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 1583 ms
+
+
+[WARN ] 2018-08-28 23:22:10,225 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-28 23:23:32,040 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-28 23:28:57,573 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[INFO ] 2018-08-29 00:28:24,787 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-08-29 00:28:24,819 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 00:28:24 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 00:28:24,843 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-29 00:28:25,105 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-29 00:28:25,227 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-29 00:28:25,238 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-29 00:28:25,480 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.content.service.ContentCategoryService=empty://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=944&side=provider&timestamp=1535473610986, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=8020&side=provider&timeout=6000&timestamp=1535473625432, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=1644&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535473681115 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=1644&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535473681115 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=944&side=provider&timestamp=1535473611298, shu.edu.service.ItemCatService=empty://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=1048&side=provider&timestamp=1535473644137, shu.edu.service.ItemService=empty://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=1048&side=provider&timestamp=1535473643791, shu.edu.search.service.SearchItemService=empty://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=8020&side=provider&timeout=6000&timestamp=1535473625034}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-29 00:28:25,491 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-29 00:28:25,504 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-29 00:28:25,505 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-08-29 00:28:25,505 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-08-29 00:28:25,505 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-29 00:28:25,506 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-08-29 00:28:25,506 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-08-29 00:28:25,506 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-08-29 00:28:25,506 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-29 00:28:25,507 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-29 00:28:25,507 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-29 00:28:25,508 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-29 00:28:25,508 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-29 00:28:25,508 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-08-29 00:28:25,508 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-08-29 00:28:25,508 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-08-29 00:28:25,509 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@d2b8a7a
+
+
+[INFO ] 2018-08-29 00:28:25,616 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-29 00:28:25,618 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-08-29 00:28:25,626 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x100000fb5610023, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-29 00:28:25,628 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-29 00:28:25,645 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535473705434, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 00:28:25,665 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535473705434, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 00:28:25,690 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535473705434, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=8020&side=provider&timeout=6000&timestamp=1535473625432, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535473705434, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535473705434], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 00:28:25,796 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xfcc75afc, /192.168.56.1:52355 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 00:28:25,797 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 00:28:25,843 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=12892&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535473705434, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 00:28:25,990 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-29 00:28:26,202 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 00:28:24 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 00:28:26,260 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 00:28:24 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 00:28:26,400 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 1592 ms
+
+
+[WARN ] 2018-08-29 00:29:44,047 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:32:48,039 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:34:44,918 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:34:45,154 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:34:48,554 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:35:06,866 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:36:43,529 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:47:29,611 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 00:47:37,621 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 01:03:13,982 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 01:04:27,863 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[INFO ] 2018-08-29 01:36:20,843 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-08-29 01:36:20,872 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 01:36:20 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 01:36:20,909 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-29 01:36:21,187 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-29 01:36:21,281 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-29 01:36:21,292 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-29 01:36:21,617 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.content.service.ContentCategoryService=empty://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=12048&side=provider&timestamp=1535477726578, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16340&side=provider&timeout=6000&timestamp=1535477744350, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=12416&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535477767355 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=12416&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535477767355 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=12048&side=provider&timestamp=1535477726881, shu.edu.service.ItemCatService=empty://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=13356&side=provider&timestamp=1535477712228, shu.edu.service.ItemService=empty://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13356&side=provider&timestamp=1535477711854, shu.edu.search.service.SearchItemService=empty://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=16340&side=provider&timeout=6000&timestamp=1535477743999}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-29 01:36:21,630 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-29 01:36:21,641 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-29 01:36:21,641 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-08-29 01:36:21,641 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-08-29 01:36:21,641 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-29 01:36:21,641 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-08-29 01:36:21,642 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-08-29 01:36:21,642 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-08-29 01:36:21,642 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-29 01:36:21,642 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-29 01:36:21,643 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-29 01:36:21,643 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-29 01:36:21,643 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-29 01:36:21,643 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-08-29 01:36:21,644 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-08-29 01:36:21,644 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-08-29 01:36:21,646 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@2b554ec2
+
+
+[INFO ] 2018-08-29 01:36:21,814 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-29 01:36:21,817 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-08-29 01:36:21,830 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x100000fb5610034, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-29 01:36:21,831 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-29 01:36:21,856 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=14784&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535477781554, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 01:36:21,880 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=14784&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535477781554, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 01:36:21,912 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=14784&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535477781554, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16340&side=provider&timeout=6000&timestamp=1535477744350, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=14784&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535477781554, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=14784&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535477781554], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 01:36:22,039 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x0fe4d7d1, /192.168.56.1:58698 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 01:36:22,039 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 01:36:22,091 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=14784&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535477781554, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 01:36:22,351 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-29 01:36:22,736 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 01:36:20 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 01:36:22,766 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 01:36:20 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 01:36:22,829 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 1970 ms
+
+
+[WARN ] 2018-08-29 01:37:20,000 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 01:47:24,691 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 01:50:25,498 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 01:54:40,281 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 01:56:49,685 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[INFO ] 2018-08-29 11:32:03,592 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-08-29 11:32:03,620 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 11:32:03 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 11:32:03,644 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-29 11:32:03,893 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-29 11:32:03,985 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-29 11:32:03,993 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-29 11:32:04,245 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.content.service.ContentCategoryService=empty://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=3792&side=provider&timestamp=1535513445343, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10116&side=provider&timeout=6000&timestamp=1535513473003, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=8476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535513504272 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=8476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535513504272 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=3792&side=provider&timestamp=1535513450273, shu.edu.service.ItemCatService=empty://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=10468&side=provider&timestamp=1535513427131, shu.edu.service.ItemService=empty://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=10468&side=provider&timestamp=1535513422092, shu.edu.search.service.SearchItemService=empty://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=10116&side=provider&timeout=6000&timestamp=1535513468087}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-29 11:32:04,256 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-29 11:32:08,779 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-29 11:32:08,780 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-08-29 11:32:08,780 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-08-29 11:32:08,781 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-29 11:32:08,781 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-08-29 11:32:08,781 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-08-29 11:32:08,781 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-08-29 11:32:08,781 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-29 11:32:08,782 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-29 11:32:08,782 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-29 11:32:08,783 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-29 11:32:08,783 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-29 11:32:08,783 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-08-29 11:32:08,783 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-08-29 11:32:08,784 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-08-29 11:32:08,785 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5244c75b
+
+
+[INFO ] 2018-08-29 11:32:08,824 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-29 11:32:08,825 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-08-29 11:32:08,832 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x100000947c00005, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-29 11:32:08,834 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-29 11:32:08,853 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=15516&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535513524191, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 11:32:08,873 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=15516&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535513524191, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 11:32:08,908 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=15516&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535513524191, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10116&side=provider&timeout=6000&timestamp=1535513473003, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=15516&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535513524191, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=15516&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535513524191], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 11:32:09,031 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xd50da9c8, /192.168.56.1:65163 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 11:32:09,032 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 11:32:09,089 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=15516&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535513524191, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-29 11:32:09,242 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-29 11:32:09,625 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 11:32:03 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 11:32:09,658 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Wed Aug 29 11:32:03 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-29 11:32:09,750 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 6142 ms
+
+
+[WARN ] 2018-08-29 11:56:06,649 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 11:56:34,033 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 11:57:43,377 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-29 13:46:42,700 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[INFO ] 2018-08-30 21:43:37,401 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-08-30 21:43:37,426 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Thu Aug 30 21:43:37 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-30 21:43:37,448 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-30 21:43:37,703 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-30 21:43:37,789 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-30 21:43:37,800 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-30 21:43:38,041 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.sso.service.UserRegisterService=empty://192.168.56.1/shu.edu.sso.service.UserRegisterService?application=shu-sso-web&category=configurators&dubbo=2.5.3&interface=shu.edu.sso.service.UserRegisterService&methods=checkData,register&pid=10448&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535630067945 empty://192.168.56.1/shu.edu.sso.service.UserRegisterService?application=shu-sso-web&category=routers&dubbo=2.5.3&interface=shu.edu.sso.service.UserRegisterService&methods=checkData,register&pid=10448&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535630067945 dubbo://192.168.56.1:20883/shu.edu.sso.service.UserRegisterService?anyhost=true&application=shu-sso&dubbo=2.5.3&interface=shu.edu.sso.service.UserRegisterService&methods=checkData,register&pid=8800&side=provider&timestamp=1535626899987, shu.edu.service.ItemCatService=empty://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=2728&side=provider&timestamp=1535607467038, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=2156&side=provider&timeout=6000&timestamp=1535607522624, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=3236&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535629308667 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=3236&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535629308667 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=6852&side=provider&timestamp=1535622849723, shu.edu.search.service.SearchItemService=empty://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=2156&side=provider&timeout=6000&timestamp=1535607517632, shu.edu.content.service.ContentCategoryService=empty://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=9644&side=provider&timestamp=1535607491398, shu.edu.sso.service.TokenService=empty://192.168.56.1/shu.edu.sso.service.TokenService?application=shu-sso-web&category=configurators&dubbo=2.5.3&interface=shu.edu.sso.service.TokenService&methods=getUserByToken&pid=10448&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535630068009 empty://192.168.56.1/shu.edu.sso.service.TokenService?application=shu-sso-web&category=routers&dubbo=2.5.3&interface=shu.edu.sso.service.TokenService&methods=getUserByToken&pid=10448&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535630068009 dubbo://192.168.56.1:20883/shu.edu.sso.service.TokenService?anyhost=true&application=shu-sso&dubbo=2.5.3&interface=shu.edu.sso.service.TokenService&methods=getUserByToken&pid=8800&side=provider&timestamp=1535626900404, shu.edu.service.ItemService=empty://192.168.56.1/shu.edu.service.ItemService?application=shu-cart-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=8280&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636522563 empty://192.168.56.1/shu.edu.service.ItemService?application=shu-cart-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=8280&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636522563 dubbo://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=2728&side=provider&timestamp=1535607462118, shu.edu.sso.service.LoginService=empty://192.168.56.1/shu.edu.sso.service.LoginService?application=shu-sso-web&category=configurators&dubbo=2.5.3&interface=shu.edu.sso.service.LoginService&methods=userLogin&pid=10448&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535630067472 empty://192.168.56.1/shu.edu.sso.service.LoginService?application=shu-sso-web&category=routers&dubbo=2.5.3&interface=shu.edu.sso.service.LoginService&methods=userLogin&pid=10448&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535630067472 dubbo://192.168.56.1:20883/shu.edu.sso.service.LoginService?anyhost=true&application=shu-sso&dubbo=2.5.3&interface=shu.edu.sso.service.LoginService&methods=userLogin&pid=8800&side=provider&timestamp=1535626900372}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-30 21:43:38,054 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-30 21:43:38,067 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-30 21:43:38,068 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-08-30 21:43:38,068 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-08-30 21:43:38,069 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-30 21:43:38,069 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-08-30 21:43:38,069 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-08-30 21:43:38,069 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-08-30 21:43:38,070 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-30 21:43:38,070 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-30 21:43:38,071 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-30 21:43:38,071 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-30 21:43:38,072 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-30 21:43:38,072 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-08-30 21:43:38,072 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-08-30 21:43:38,072 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-08-30 21:43:38,073 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7bbf46c7
+
+
+[INFO ] 2018-08-30 21:43:38,179 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-30 21:43:38,182 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-08-30 21:43:38,189 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x10000048610001f, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-30 21:43:38,191 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-30 21:43:38,208 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:43:38,224 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:43:38,251 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=2156&side=provider&timeout=6000&timestamp=1535607522624, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:43:38,381 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x53736577, /192.168.56.1:61168 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:43:38,381 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:43:38,426 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535636617986, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:43:38,563 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-30 21:43:38,821 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Thu Aug 30 21:43:37 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-30 21:43:38,862 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Thu Aug 30 21:43:37 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-30 21:43:38,945 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 1533 ms
+
+
+[INFO ] 2018-08-30 21:47:17,432 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:20882,url:dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535636617986, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[WARN ] 2018-08-30 21:47:19,545 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.56.1:20882 find error . url: dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535636617986, dubbo version: 2.5.3, current host: 192.168.56.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535636617986) failed to connect to server /192.168.56.1:20882, error message is:Connection refused: no further information: /192.168.56.1:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.56.1:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2018-08-30 21:47:46,611 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986, urls: [empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:50:45,380 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1535636617986, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=17268&side=provider&timeout=6000&timestamp=1535637045342], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:50:45,424 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xbcc44283, /192.168.56.1:61932 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-08-30 21:50:45,433 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[WARN ] 2018-08-30 22:22:53,703 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-30 22:48:05,241 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[WARN ] 2018-08-30 22:48:07,451 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'
+
+
+[INFO ] 2018-08-30 23:12:03,211 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:20882,url:dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535636617986, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[WARN ] 2018-08-30 23:12:05,483 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.56.1:20882 find error . url: dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535636617986, dubbo version: 2.5.3, current host: 192.168.56.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=shu.edu.search.service.SearchService&methods=search&pid=16628&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1535636617986) failed to connect to server /192.168.56.1:20882, error message is:Connection refused: no further information: /192.168.56.1:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.56.1:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2018-10-28 16:52:00,136 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-10-28 16:52:00,166 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Sun Oct 28 16:52:00 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-28 16:52:00,191 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-10-28 16:52:00,627 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-10-28 16:52:00,715 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-10-28 16:52:00,723 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-10-28 16:52:00,944 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.sso.service.UserRegisterService=empty://192.168.56.1:20883/shu.edu.sso.service.UserRegisterService?anyhost=true&application=shu-sso&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.sso.service.UserRegisterService&methods=checkData,register&pid=5048&side=provider&timestamp=1540715457230, shu.edu.service.ItemCatService=empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716209965 empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716209965 dubbo://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=6080&side=provider&timestamp=1540714959090, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7412&side=provider&timeout=6000&timestamp=1540715403189, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=6260&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716623991 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-portal-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=6260&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716623991 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=8752&side=provider&timestamp=1540715286787, shu.edu.search.service.SearchItemService=empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716210085 empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716210085 dubbo://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=7412&side=provider&timeout=6000&timestamp=1540715398321, shu.edu.content.service.ContentCategoryService=empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716204880 empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716204880 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=8752&side=provider&timestamp=1540715281941, shu.edu.sso.service.TokenService=empty://192.168.56.1:20883/shu.edu.sso.service.TokenService?anyhost=true&application=shu-sso&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.sso.service.TokenService&methods=getUserByToken&pid=5048&side=provider&timestamp=1540715462111, shu.edu.service.ItemService=empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716210019 empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=12952&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716210019 dubbo://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=6080&side=provider&timestamp=1540714954153, shu.edu.sso.service.LoginService=empty://192.168.56.1:20883/shu.edu.sso.service.LoginService?anyhost=true&application=shu-sso&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.sso.service.LoginService&methods=userLogin&pid=5048&side=provider&timestamp=1540715462084}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-10-28 16:52:00,959 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-10-28 16:52:05,481 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-10-28 16:52:05,482 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-10-28 16:52:05,482 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-10-28 16:52:05,482 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-10-28 16:52:05,482 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-10-28 16:52:05,483 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-10-28 16:52:05,484 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-10-28 16:52:05,484 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-10-28 16:52:05,485 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@68f66ed
+
+
+[INFO ] 2018-10-28 16:52:05,575 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-10-28 16:52:05,577 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-10-28 16:52:05,585 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x10000035775000a, negotiated timeout = 30000
+
+
+[INFO ] 2018-10-28 16:52:05,587 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-10-28 16:52:05,609 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=1436&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716720888, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 16:52:05,631 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=1436&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716720888, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 16:52:05,666 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=1436&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716720888, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7412&side=provider&timeout=6000&timestamp=1540715403189, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=1436&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716720888, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=1436&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540716720888], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 16:52:05,801 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x28330e96, /192.168.56.1:50719 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 16:52:05,802 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 16:52:05,856 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=1436&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1540716720888, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 16:52:05,997 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-10-28 16:52:06,209 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Sun Oct 28 16:52:00 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-28 16:52:06,251 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Sun Oct 28 16:52:00 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-28 16:52:06,327 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 6175 ms
+
+
+[INFO ] 2018-10-28 18:28:17,374 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'shu-search-web': initialization started
+
+
+[INFO ] 2018-10-28 18:28:17,400 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Sun Oct 28 18:28:17 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-28 18:28:17,423 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-10-28 18:28:17,665 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-10-28 18:28:17,758 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-10-28 18:28:17,765 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-10-28 18:28:18,027 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\asus\.dubbo\dubbo-registry-192.168.56.101.cache, data: {shu.edu.sso.service.UserRegisterService=empty://192.168.56.1:20883/shu.edu.sso.service.UserRegisterService?anyhost=true&application=shu-sso&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.sso.service.UserRegisterService&methods=checkData,register&pid=12408&side=provider&timestamp=1540722362008, shu.edu.service.ItemCatService=empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421210 empty://192.168.56.1/shu.edu.service.ItemCatService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421210 dubbo://192.168.56.1:20880/shu.edu.service.ItemCatService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemCatService&methods=getItemCatList&pid=4976&side=provider&timeout=2000&timestamp=1540721246355, shu.edu.search.service.SearchService=empty://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10972&side=provider&timeout=6000&timestamp=1540722356791, shu.edu.content.service.ContentService=empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421158 empty://192.168.56.1/shu.edu.content.service.ContentService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421158 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentService&methods=getContentListByCid,addContent&pid=13236&side=provider&timeout=6000&timestamp=1540721732653, shu.edu.search.service.SearchItemService=empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421316 empty://192.168.56.1/shu.edu.search.service.SearchItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421316 dubbo://192.168.56.1:20882/shu.edu.search.service.SearchItemService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchItemService&methods=importAllItems&pid=10972&side=provider&timeout=6000&timestamp=1540722351899, shu.edu.content.service.ContentCategoryService=empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722416121 empty://192.168.56.1/shu.edu.content.service.ContentCategoryService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722416121 dubbo://192.168.56.1:20881/shu.edu.content.service.ContentCategoryService?anyhost=true&application=shu-content&dubbo=2.5.3&interface=shu.edu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=13236&side=provider&timeout=6000&timestamp=1540721727720, shu.edu.sso.service.TokenService=empty://192.168.56.1:20883/shu.edu.sso.service.TokenService?anyhost=true&application=shu-sso&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.sso.service.TokenService&methods=getUserByToken&pid=12408&side=provider&timestamp=1540722366945, shu.edu.service.ItemService=empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=configurators&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421257 empty://192.168.56.1/shu.edu.service.ItemService?application=shu-manager-web&category=routers&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=9476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722421257 dubbo://192.168.56.1:20880/shu.edu.service.ItemService?anyhost=true&application=shu-manager&dubbo=2.5.3&interface=shu.edu.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=4976&side=provider&timeout=2000&timestamp=1540721241158, shu.edu.sso.service.LoginService=empty://192.168.56.1:20883/shu.edu.sso.service.LoginService?anyhost=true&application=shu-sso&category=configurators&check=false&dubbo=2.5.3&interface=shu.edu.sso.service.LoginService&methods=userLogin&pid=12408&side=provider&timestamp=1540722366914}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-10-28 18:28:18,041 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-10-28 18:28:22,568 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-10-28 18:28:22,570 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-1RV2G0U
+
+
+[INFO ] 2018-10-28 18:28:22,571 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-10-28 18:28:22,571 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-10-28 18:28:22,572 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-10-28 18:28:22,572 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\engineering_soft\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-10-28 18:28:22,573 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\engineering_soft\apache-tomcat-9.0.4\bin;D:\engineering_soft\apache-tomcat-9.0.4\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\engineering_soft\apache-maven-3.3.9\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\engineering_soft\SSH secure;D:\engineering_soft\eclipse\eclipseEE;;.
+
+
+[INFO ] 2018-10-28 18:28:22,574 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\
+
+
+[INFO ] 2018-10-28 18:28:22,575 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-10-28 18:28:22,577 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-10-28 18:28:22,578 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-10-28 18:28:22,579 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-10-28 18:28:22,579 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=asus
+
+
+[INFO ] 2018-10-28 18:28:22,580 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\asus
+
+
+[INFO ] 2018-10-28 18:28:22,581 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\engineering_soft\big_style_ebusiness\shu-search-web
+
+
+[INFO ] 2018-10-28 18:28:22,584 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.56.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@e9dee77
+
+
+[INFO ] 2018-10-28 18:28:22,694 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.56.101/192.168.56.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-10-28 18:28:22,695 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.56.101/192.168.56.101:2181, initiating session
+
+
+[INFO ] 2018-10-28 18:28:22,705 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.56.101/192.168.56.101:2181, sessionid = 0x100000357750020, negotiated timeout = 30000
+
+
+[INFO ] 2018-10-28 18:28:22,707 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-10-28 18:28:22,733 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=consumers&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7192&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722497962, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 18:28:22,755 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7192&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722497962, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 18:28:22,798 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7192&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722497962, urls: [dubbo://192.168.56.1:20882/shu.edu.search.service.SearchService?anyhost=true&application=shu-search&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=10972&side=provider&timeout=6000&timestamp=1540722356791, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=configurators&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7192&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722497962, empty://192.168.56.1/shu.edu.search.service.SearchService?application=shu-search-web&category=routers&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7192&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1540722497962], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 18:28:22,940 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x1798ea50, /192.168.56.1:51978 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 18:28:22,940 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-1RV2G0U/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 18:28:22,995 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service shu.edu.search.service.SearchService from url zookeeper://192.168.56.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=shu-search-web&check=false&dubbo=2.5.3&interface=shu.edu.search.service.SearchService&methods=search&pid=7192&revision=0.0.1-SNAPSHOT&side=consumer&timeout=6000&timestamp=1540722497962, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-28 18:28:23,114 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String shu.edu.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-10-28 18:28:23,323 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Sun Oct 28 18:28:17 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-28 18:28:23,359 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'shu-search-web-servlet': startup date [Sun Oct 28 18:28:17 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-28 18:28:23,432 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'shu-search-web': initialization completed in 6045 ms
+
+
+[WARN ] 2018-10-28 23:55:16,582 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'shu-search-web'

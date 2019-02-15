@@ -1,0 +1,3 @@
+shu\edu\sso\service\impl\TokenServiceImpl.class
+shu\edu\sso\service\impl\UserRegisterServiceImpl.class
+shu\edu\sso\service\impl\LoginServiceImpl.class
